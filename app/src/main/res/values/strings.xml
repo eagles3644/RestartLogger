@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Restart Logger</string>
+    <string name="title_section1">Counter</string>
+    <string name="title_section2">Log</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="last_reboot_label_text">Last Recorded Restart:</string>
+    <string name="reboot_counter_label">Recorded Restart Count:</string>
+    <string name="widget_reboot_counter_label">Restart Count:</string>
+    <string name="reset_counter_button_label">Reset Counter</string>
+    <string name="log_action_header">Action</string>
+    <string name="log_shutdown_header">Shutdown</string>
+    <string name="log_boot_header">Reboot</string>
+    <string name="no_restarts_text">No Restart Recorded Yet</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_section3">Scheduled Restarts</string>
+    <string name="schedule_add_desc">Add Schedule</string>
+    <string name="repeat">Repeat</string>
+    <string name="Sunday">Sun</string>
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="add_schedule_button_label">Add Scheduled Restart</string>
+    <string name="no_schedule_text">No Scheduled Restarts Exist</string>
+    <string name="title_section4">Reboot Menu</string>
+    <string name="fullReboot">Full Reboot</string>
+    <string name="hotReboot">Hot Reboot</string>
+    <string name="shutdown">Shutdown</string>
+    <string name="reboot">Reboot</string>
+    <string name="rebootRecovery">Reboot Recovery</string>
+    <string name="rebootBootloader">Reboot Bootloader</string>
+    <string name="quick_boot_menu">Quick Reboot Menu</string>
+    <string name="add_shortcut">Add Reboot Menu Icon</string>
+    <string name="rate_me">RATE ME</string>
+
+    <string-array name="rebootTypeSpinVals">
+        <item>Full Reboot</item>
+        <item>Hot Reboot</item>
+    </string-array>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_delete">Delete</string>
+    <string name="title_activity_reboot">RebootActivity</string>
+
+</resources>

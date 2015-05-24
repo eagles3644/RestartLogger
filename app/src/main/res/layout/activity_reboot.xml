@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="com.dugan.restartlogger.RebootActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/RebootingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/RebootingIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/RebootingTitle"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="@string/app_name"/>
+
+        <ProgressBar
+            android:id="@+id/RebootingProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RebootingIcon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/RebootingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RebootingProgress"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$LogFragment">
+
+    <RelativeLayout
+        android:id="@+id/logTableView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/logHeaders"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/logActionHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:text="@string/log_action_header"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+            android:id="@+id/logShutdownDatetimeHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40"
+            android:text="@string/log_shutdown_header"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+            <TextView
+                android:id="@+id/logBootDatetimeHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".40"
+                android:text="@string/log_boot_header"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/logList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logHeaders" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noLogView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noLogIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="150dp"
+            android:src="@drawable/ic_simple_icon" />
+
+        <TextView
+            android:id="@+id/noLogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/noLogIcon"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:text="@string/no_restarts_text"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

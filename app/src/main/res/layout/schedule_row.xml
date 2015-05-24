@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_card">
+
+    <RelativeLayout
+        android:id="@+id/scheduleTitleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/scheduleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"/>
+
+        <Switch
+            android:id="@+id/scheduleEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textOff="Off"
+            android:textOn="On"
+            android:showText="true"
+            android:paddingRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scheduleContentView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scheduleTitleView"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/rebootTypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:id="@+id/radioFullReboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fullReboot"/>
+
+            <RadioButton
+                android:id="@+id/radioHotReboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotReboot"/>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/scheduleRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/repeat"/>
+
+        <RelativeLayout
+            android:id="@+id/scheduleDaysView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rebootTypeRadioGroup"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:id="@+id/scheduleSunday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Sunday"
+                android:textOff="@string/Sunday"/>
+
+            <ToggleButton
+                android:id="@+id/scheduleMonday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Monday"
+                android:textOff="@string/Monday"
+                android:layout_toEndOf="@id/scheduleSunday"
+                android:layout_toRightOf="@id/scheduleSunday"/>
+
+            <ToggleButton
+                android:id="@+id/scheduleTuesday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Tuesday"
+                android:textOff="@string/Tuesday"
+                android:layout_toEndOf="@id/scheduleMonday"
+                android:layout_toRightOf="@id/scheduleMonday"/>
+
+            <ToggleButton
+                android:id="@+id/scheduleWednesday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Wednesday"
+                android:textOff="@string/Wednesday"
+                android:layout_toEndOf="@id/scheduleTuesday"
+                android:layout_toRightOf="@id/scheduleTuesday"/>
+
+            <ToggleButton
+                android:id="@+id/scheduleThursday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Thursday"
+                android:textOff="@string/Thursday"
+                android:layout_toEndOf="@id/scheduleWednesday"
+                android:layout_toRightOf="@id/scheduleWednesday"/>
+
+            <ToggleButton
+                android:id="@+id/scheduleFriday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Friday"
+                android:textOff="@string/Friday"
+                android:layout_toEndOf="@id/scheduleThursday"
+                android:layout_toRightOf="@id/scheduleThursday"/>
+
+            <ToggleButton
+                android:id="@+id/scheduleSaturday"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:textOn="@string/Saturday"
+                android:textOff="@string/Saturday"
+                android:layout_toEndOf="@id/scheduleFriday"
+                android:layout_toRightOf="@id/scheduleFriday"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/scheduleDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_below="@id/scheduleDaysView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/scheduleContentShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_expand" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="com.dugan.restartlogger.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/SplashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/SplashIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/SplashTitle"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="@string/app_name"/>
+
+        <ProgressBar
+            android:id="@+id/SplashProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SplashIcon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/SplashText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SplashProgress"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/SplashProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SplashText"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
